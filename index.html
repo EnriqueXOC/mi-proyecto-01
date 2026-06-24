@@ -31,11 +31,12 @@
 <html>
 <body>
   <h1>Hora del servidor:</h1>
-  <div id="resultado">Cargando...</div>
-  <script>
-    fetch('https://mispruebashost.site.je/?valor=1')
-      .then(res => res.text())
-      .then(data => document.getElementById('resultado').innerText = data);
-  </script>
+  <div id="reloj">Cargando...</div>
+
+<script>
+  fetch('https://mispruebashost.site.je/', { cache: 'no-store' })
+    .then(res => res.text())
+    .then(data => { document.getElementById('reloj').innerText = data; });
+</script>
 </body>
 </html>
