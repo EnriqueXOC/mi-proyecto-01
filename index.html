@@ -31,12 +31,12 @@
 <html>
 <body>
   <h1>Hora del servidor:</h1>
-  <div id="reloj">Cargando...</div>
+ <h1 id="reloj">Cargando...</h1>
 
 <script>
-  fetch('https://mispruebashost.site.je/', { cache: 'no-store' })
-    .then(res => res.text())
-    .then(data => { document.getElementById('reloj').innerText = data; });
+  fetch('https://api.allorigins.win/raw?url=https://mispruebashost.site.je/')
+    .then(r => r.text())
+    .then(t => document.getElementById('reloj').innerText = t);
 </script>
 </body>
 </html>
