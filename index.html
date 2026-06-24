@@ -31,21 +31,8 @@
 <html>
 <body>
   <h1>Hora del servidor:</h1>
-  <h1 id="reloj">Cargando...</h1>
+
 <iframe src="https://mispruebashost.site.je/" width="200" height="50" frameborder="0"></iframe>
-  <script>
-    // Usamos una API pública que permite peticiones CORS sin errores
-    fetch('https://worldtimeapi.org/api/timezone/America/Mexico_City')
-      .then(res => res.json())
-      .then(data => {
-        // La API devuelve un formato JSON, extraemos solo la hora
-        const horaCompleta = data.datetime.split('T')[1].split('.')[0];
-        document.getElementById('reloj').innerText = horaCompleta;
-      })
-      .catch(err => {
-        console.error('Error:', err);
-        document.getElementById('reloj').innerText = "No se pudo obtener la hora.";
-      });
-  </script>
+ 
 </body>
 </html>
