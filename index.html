@@ -30,9 +30,10 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <h1>Hora del servidor:|</h1>
-
-<iframe src="https://mispruebashost.site.je/" width="200" height="50" frameborder="0"></iframe>
- 
+ <h1 id="reloj">Cargando...|||</h1>
+<script>
+  function mostrar(dato) { document.getElementById('reloj').innerText = dato; }
+</script>
+<script src="https://mispruebashost.site.je/index.php?callback=mostrar"></script>
 </body>
 </html>
