@@ -31,11 +31,18 @@
 <html>
 <body>
 <h1 id="reloj">Cargando...</h1>
+
 <script>
+  // Apunta directamente a tu servidor, sin el prefijo del proxy
   fetch('https://mispruebashost.site.je/', { cache: 'no-store' })
     .then(r => r.text())
-    .then(t => document.getElementById('reloj').innerText = t)
-    .catch(err => console.error('Error:', err));
+    .then(t => {
+      document.getElementById('reloj').innerText = t;
+    })
+    .catch(err => {
+      console.error('Error al conectar:', err);
+      document.getElementById('reloj').innerText = "Error de conexión";
+    });
 </script>
 </body>
 </html>
