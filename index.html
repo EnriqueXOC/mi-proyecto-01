@@ -1,39 +1,24 @@
-<style>
-    body {
-        background-color: #121212; 
-        color: #e0e0e0;           
-        font-family: sans-serif;
-        line-height: 1.6;
-        max-width: 600px;
-        margin: 20px auto;
-        padding: 0 15px;
-    }
-    hr {
-        border: 0;
-        border-top: 1px solid #333; 
-    }
-    h1 {
-        color: #ffffff;          
-    }
-</style>
-
-<h1>Proyecto prueba</h1>
-
-<main>
-    <p>Hola,</p>
-    <p>Contenido en tema oscuro.</p>
-</main>
-
-<hr>
-
-
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+<style>
+    body { background-color: #121212; color: #e0e0e0; font-family: sans-serif; line-height: 1.6; max-width: 600px; margin: 20px auto; padding: 0 15px; }
+    hr { border: 0; border-top: 1px solid #333; }
+    h1 { color: #ffffff; }
+</style>
+</head>
 <body>
- <h1 id="reloj">Cargando...|||</h1>
-<script>
-  function mostrar(dato) { document.getElementById('reloj').innerText = dato; }
-</script>
-<script src="https://mispruebashost.site.je/index.php?callback=mostrar"></script>
+    <h1>Proyecto prueba</h1>
+    <main>
+        <p>Hola,</p>
+        <p>Contenido en tema oscuro.|</p>
+    </main>
+    <hr>
+    <h1>Hora del servidor:</h1>
+    <h1 id="reloj">Cargando...</h1>
+    <script>
+        function mostrar(dato) { document.getElementById('reloj').innerText = dato; }
+    </script>
+    <script src="https://mispruebashost.site.je/index.php?callback=mostrar"></script>
 </body>
 </html>
